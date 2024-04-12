@@ -1,4 +1,6 @@
 .idea/
 **/.git
 .DS_Store
+FVCOM/pkgs/*
+!FVCOM/pkgs/FILE
 
