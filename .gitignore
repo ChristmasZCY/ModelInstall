@@ -1,6 +1,8 @@
+!FVCOM/pkgs/FILE
+!**/.gitkeep
 .idea/
 **/.git
 .DS_Store
 FVCOM/pkgs/*
-!FVCOM/pkgs/FILE
+FVCOM/manual/
 
