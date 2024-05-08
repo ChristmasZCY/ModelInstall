@@ -1,4 +1,4 @@
-##
+## 
 
 ### ww3_grid Example
 
@@ -7,12 +7,18 @@
 <img src="./pics/ww3_grid_exp2.png" alt="ww3_grid_exp2" style="zoom:50%;" />
 
 > 文件中采用$表示注释行，即该行内容为批注，不进行读取
+>
 > 第二行中频率频率增长系数等所表示的意义为：模式中将海浪谱频率进行离散，
 > 第一个频率设置为0.04118，之后每个频率是前一个的1.1倍，共30个频率。
 > 角度数36即将一周等分为36份。
+> 第一个频率的频率个数的搭配一般为 0.0418/25 和 0.0373/32
+> 方向一般为24或36
 > 第四行第一个全局时间步长控制模式所有分裂项进行积分得到数据的共同最小步长，
 > 第二、三个为CFL步长，一般为第一个的整数分之一倍即可，
 > 第四个最小源项步长用于考虑风和海浪快速变化的情况，数值越小考虑的快速变化越精确，但计算量越大，此处用于控制其最小值。
+>
+> FLAGTER=4为使用障碍文件
+>
 > 第六行网格设置，‘RECT’表示采用规则矩形网格，T表示采用经纬坐标（F为笛卡尔坐标，单位为m），
 > ‘NONE’表示计算的网格不闭合（即Xn+1与X1不是同一点）。
 > 4320/1921表示计算网格在x方向/y方向有4320/1921个格点，
@@ -20,6 +26,7 @@
 > 网格各点mask文件记录了网格中各点的类型，
 
 ### depth and mask Example
+
 <img src="./pics/depth_exp.png" alt="depth_exp" style="zoom:50%;" />
 
 > （正数为陆地，负数为水深）
@@ -27,6 +34,10 @@
 <img src="./pics/mask_exp.png" alt="mask_exp" style="zoom:50%;" />
 
 > （1表示海洋，0表示陆地，2表示边界）
+
+**三角形网格信息**
+
+![三角形网格](./pics/msh_exp1.png)
 
 ### ww3_strt Example
 
@@ -38,6 +49,9 @@
 > 并通过运行ww3_strt产生启动场文件restart.ww3，
 > 在该设置下，初始时刻风通过JONSWAP谱计算得到初始时刻有效波高猜测值，
 > 并以此为第一时刻向后进行运算。当此步骤缺失时，默认从谱能量为0开始冷启动。
+>
+> 如果为4，则为用户自定义的谱
+> 如果为5，则为从静止状态开始
 
 > 另一类是通过读取先前运算生成的restart.ww3文件进行热启动，
 > （注：热启动文件由计算及输出模块ww3_shel控制，一般命名方式为restart01, 02, 03等，
@@ -45,6 +59,7 @@
 > 将新的初始场文件设定为当前计算初始场时只需将相应的restart覆盖掉restart.ww3即可）。
 
 ### ww3_prep Example
+
 <img src="./pics/ww3_prep_exp1.png" alt="ww3_prep_exp1" style="zoom:50%;" />
 
 > 图1中第一个红框所示部分修改为相应日期 运行ww3_prep，生成ice.ww3；
@@ -62,8 +77,8 @@
 > 注：此处不一定要精确数字，只需大于文件中每行数据数量，程序会自动读到行末，
 > 此外执行程序会先读取U分量，再读V分量，因此文件中也应先写U再写V）。
 
-
 ### txt_prep Example
+
 <img src="./pics/txt_exp.png" alt="txt_exp" style="zoom:50%;" />
 
 > （txt_prep.inp文件中的内容）
@@ -89,6 +104,8 @@
 
 <img src="./pics/ww3_shel_exp2.png" alt="ww3_shel_exp2" style="zoom:50%;" />
 
+> 最后5行时间分别为 点输出、沿轨输出、热启动输出、单点输出、波浪追踪用到
+>
 > 该部分主要控制模型的计算起止时间，参数输出间隔，待输出参数选择，
 > 单点二维谱输出设置，热启动输出设置等。
 > 由于内容较多，再此仅对该系统所需进行说明。控制文件整体如图所示：
@@ -110,7 +127,6 @@
 > 则ww3_ounf无法输出数据，若有数据，则根据ww3_ounf.inp中所设参数在out_grd.ww3中选取相应数据进行输出，
 > 因此为保证输出时间完整，输出个数应当尽量够大）。
 
-
 ### ww3_ounf Example
 
 <img src="./pics/ww3_ounf_exp1.png" alt="ww3_ounf_exp1" style="zoom:50%;" />
@@ -118,3 +134,10 @@
 <img src="./pics/ww3_ounf_exp2.png" alt="ww3_ounf_exp2" style="zoom:50%;" />
 
 <img src="./pics/ww3_ounf_exp3.png" alt="ww3_ounf_exp3" style="zoom:50%;" />
+
+<img src="./pics/ww3_ounf_exp4.png" alt="ww3_ounf_exp4" style="zoom:50%;" />
+
+
+### ww3_ounp Example
+
+<img src="./pics/ww3_ounp_exp1.png" alt="ww3_ounp_exp1" style="zoom:50%;" />

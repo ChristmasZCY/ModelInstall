@@ -28,7 +28,7 @@ cd $SCRIPT_DIR || exit
 FABM=$CODE_DIR/fabm
 ERSEM=$CODE_DIR/ersem
 FABM_INSTALL=$INSTALL_DIR/FABM-ERSEM
-FC=$(which mpiifort)
+FC=$(which mpifort)
 
 mkdir -p $FABM_INSTALL
 
@@ -39,6 +39,8 @@ cd build || exit
 cmake $FABM -DFABM_HOST=fvcom -DFABM_ERSEM_BASE=$ERSEM -DCMAKE_Fortran_COMPILER=$FC -DCMAKE_INSTALL_PREFIX=$FABM_INSTALL
 # cmake ../../ -DFABM_HOST=fvcom -DFABM_ERSEM_BASE=/home/ocean/zcy/hhhhhh/code/ersem -DCMAKE_Fortran_COMPILER=mpifort -DCMAKE_INSTALL_PREFIX=/home/ocean/zcy/hhhhhh/model/FABM-ERSEM
 make install -j $num_cpu
+mkdir -p $FABM_INSTALL/lib
+cp libfabm.a $FABM_INSTALL/lib
 
 cd $SCRIPT_DIR || exit
 

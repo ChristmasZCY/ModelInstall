@@ -40,6 +40,7 @@ comp link comp.Intel link.Intel # 只改前两个就行 :%s/mpiifort/mpif90/g
 ./w3_new
 ./w3_make
 # ./w3_make ww3_grid ww3_strt ww3_bounc ww3_prnc ww3_shel ww3_ounf ww3_ounp
+# ./w3_automake
 ```
 #### SWITCH设置
 

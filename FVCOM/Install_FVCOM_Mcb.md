@@ -32,6 +32,11 @@
             DTINCS      = -I/opt/FVCOM/include
    ```
 
+4. 第97-98行（打开NETCDF4）
+    ```makefile
+    #            FLAG_USE_NETCDF4     = -DUSE_NETCDF4
+    #            FLAG_USE_COMPRESSION = -DUSE_COMPRESSION
+    ```
 
 4. 第97行增加#，第98行去掉开头的#，改完后：
     ```makefile
