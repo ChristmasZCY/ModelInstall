@@ -7,7 +7,7 @@ INSTALL_DIR=$SCRIPT_DIR/model
 
 num_cpu=$(nproc)
 
-website=("https://github.com/UK-FVCOM-Usergroup/uk-fvcom.git" "https://github.com/pmlmodelling/ersem.git" "ghttps://github.com/fabm-model/fabm.git")
+website=("https://github.com/UK-FVCOM-Usergroup/uk-fvcom.git" "https://github.com/pmlmodelling/ersem.git" "https://github.com/fabm-model/fabm.git")
 name=("uk-fvcom" "ersem" "fabm")
 branch=("FVCOM-FABM" "master" "master")
 

@@ -141,3 +141,20 @@
 ### ww3_ounp Example
 
 <img src="./pics/ww3_ounp_exp1.png" alt="ww3_ounp_exp1" style="zoom:50%;" />
+
+
+### ww3_multi Example
+
+**外层网格的编号要小于内层网格**
+
+如外层为grd1, 内层为grd2
+
+<img src="./pics/ww3_multi_exp1.png" alt="ww3_multi_exp1" style="zoom:50%;" />
+
+<img src="./pics/ww3_multi_exp2.png" alt="ww3_multi_exp2" style="zoom:50%;" />
+
+<img src="./pics/ww3_multi_exp3.png" alt="ww3_multi_exp3" style="zoom:50%;" />
+
+<img src="./pics/ww3_multi_exp4.png" alt="ww3_multi_exp4" style="zoom:50%;" />
+
+

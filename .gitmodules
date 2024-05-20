@@ -1,0 +1,28 @@
+
+[submodule "FVCOM/src/FVCOM"]
+	path = FVCOM/src/FVCOM
+	url = https://github.com/FVCOM-GitHub/FVCOM.git
+
+[submodule "FVCOM/src/ersem"]
+	path = FVCOM/src/ersem
+	url = https://github.com/pmlmodelling/ersem.git
+
+[submodule "FVCOM/src/uk-fvcom"]
+	path = FVCOM/src/uk-fvcom
+	url = https://github.com/UK-FVCOM-Usergroup/uk-fvcom.git
+
+[submodule "FVCOM/src/fabm"]
+	path = FVCOM/src/fabm
+	url = https://github.com/fabm-model/fabm.git
+
+[submodule "WW3/src/WW3"]
+	path = WW3/src/WW3
+	url = https://github.com/NOAA-EMC/WW3.git
+
+[submodule "WRF/src/WRF"]
+	path = WRF/src/WRF
+	url = https://github.com/wrf-model/WRF.git
+
+[submodule "WRF/src/WPS"]
+	path = WRF/src/WPS
+	url = https://github.com/wrf-model/WPS.git

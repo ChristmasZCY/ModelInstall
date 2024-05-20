@@ -6,5 +6,5 @@ FVCOM/pkgs/*
 !FVCOM/pkgs/FILE
 FVCOM/manual/
 
-WW3/src/*
+WW3/pkgs/*
 WW3/manual/

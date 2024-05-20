@@ -1,31 +1,65 @@
 [toc]
 
-
-##
-
-
+## 
 
 ## 简要说明
+
 ![框架](./pics/Frame.png)
 
 ![目录说明](./pics/conatins_Instructions.png)
 
-
 ### SWITCH
 
-![SWITCH_1](./pics/SWITCH_1.png)
+- SWITCH_1
 
-![SWITCH_2](./pics/SWITCH_2.png)
+  <img src="./pics/SWITCH_1.png" alt="SWITCH_1" style="zoom:50%;"  />
+- SWITCH_2
 
-![SWITCH_3](./pics/SWITCH_3.png)
+  <img src="./pics/SWITCH_2.png" alt="SWITCH_2" style="zoom:50%;"  />
+- SWITCH_3
 
-![SWITCH_NL_ST](./pics/SWITCH_NL_ST.png)
+  <img src="./pics/SWITCH_3.png" alt="SWITCH_3" style="zoom:50%;"  />
 
-![SWITCH_IC_IS](./pics/SWITCH_IC_IS.png)
+  <img src="./pics/SWITCH_NL_ST.png" alt="SWITCH_NL_ST" style="zoom:50%;"  />
 
-![SWITCH_BT_TR_DB](./pics/SWITCH_BT_TR_DB.png)
+#### 海冰
 
-![SWITCH_On](./pics/SWITCH_On.png)
+<img src="./pics/SWITCH_IC_IS.png" alt="SWITCH_IC_IS" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des1_IC_IS.png" alt="Des1_IC_IS" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des2_IC_IS.png" alt="Des2_IC_IS" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_IC1.png" alt="Des_IC1" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_IC2.png" alt="Des_IC2" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_IC3.png" alt="Des_IC3" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_IC4.png" alt="Des_IC4" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_IC5.png" alt="Des_IC5" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_IS.png" alt="Des_IS" style="zoom:50%;"  /><\br>
+
+
+### 参数率定
+
+
+<img src="./pics/Des_para1.png" alt="Des_para1" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_para2.png" alt="Des_para2" style="zoom:50%;"  /><\br>
+
+<img src="./pics/Des_para3.png" alt="Des_para3" style="zoom:50%;"  /><\br>
+
+
+
+
+- SWITCH_BT_TR_DB
+  ![SWITCH_BT_TR_DB](./pics/SWITCH_BT_TR_DB.png)
+
+- SWITCH_On
+  ![SWITCH_On](./pics/SWITCH_On.png)
 
 坐标系`XYG` `LLG`
 
