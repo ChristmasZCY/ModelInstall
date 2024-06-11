@@ -8,3 +8,10 @@ FVCOM/manual/
 
 WW3/pkgs/*
 WW3/manual/
+
+
+NAO99/pkgs/*.tar.gz
+NAO99/pkgs/*.zip
+
+
+TPXO/pkgs/*.tar.Z
