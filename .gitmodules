@@ -26,3 +26,6 @@
 [submodule "WRF/src/WPS"]
 	path = WRF/src/WPS
 	url = https://github.com/wrf-model/WPS.git
+[submodule "MITgcm/src/MITgcm"]
+	path = MITgcm/src/MITgcm
+	url = https://github.com/MITgcm/MITgcm.git
